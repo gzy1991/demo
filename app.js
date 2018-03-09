@@ -24,6 +24,7 @@ App({
       wx.login({
         success: function(data) {
           wx.request({
+            url: openIdUrl,
             data: {
               code: data.code
             },
